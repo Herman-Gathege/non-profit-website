@@ -1,0 +1,509 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Target all h2 elements outside the header-text class */
+h2:not(.header-text h2) {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Maintain the original styling for the header h2 */
+.header-text h2 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* General reset for padding/margins */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* General reset for padding/margins */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #004d40;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.header-container .header-img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-container .header-img:hover {
+  transform: scale(1.05);
+}
+
+.header-text {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.header-text h2 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .header-container .header-img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .header-text {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .header-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* About Us Section */
+.about-us {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #004d40;
+}
+
+.about-us img {
+  max-width: 60%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.about-us img:hover {
+  opacity: 0.8;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  color: #004d40;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Container for the donate section */
+.donate-container {
+  padding: 60px 20px;
+  background-color: #f1f8e9;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Flexbox layout for image and text */
+.donate-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image styling */
+.donate-img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.donate-img:hover {
+  transform: scale(1.05);
+}
+
+/* Text container styling */
+.donate-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.donate-text h2 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.donate-text p {
+  font-size: 1.2rem;
+  color: #004d40;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+
+.donate-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #00695c;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease-in-out; */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donate-btn:hover {
+  background-color: #004d40;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .donate-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .donate-img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .donate-text h2 {
+    font-size: 2rem;
+  }
+
+  .donate-text p {
+    font-size: 1.1rem;
+  }
+
+  .donate-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}
+
+
+/* Mission section container */
+.mission-container {
+  padding: 60px 20px;
+  background-color: #e0f7fa;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Mission content with flex for image and text */
+.mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image styling */
+.mission-img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mission-img:hover {
+  transform: scale(1.05);
+}
+
+/* Text container styling */
+.mission-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.mission-text h2 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.mission-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #004d40;
+  margin-top: 10px;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .mission-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .mission-text h2 {
+    font-size: 2rem;
+  }
+
+  .mission-text p {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #004d40;
+}
+
+.testimonials img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.testimonial p:first-of-type {
+  font-style: italic;
+}
+
+/* Volunteer Section */
+.volunteer {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.volunteer h2 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.volunteer img {
+  max-width: 60%;
+  margin-top: 30px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.volunteer img:hover {
+  transform: scale(1.05);
+}
+
+.volunteer p {
+  font-size: 1.1rem;
+  color: #004d40;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Volunteer Form Styling */
+.volunteer form {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  padding: 40px;
+  margin-top: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer form input,
+.volunteer form button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.volunteer form button {
+  background-color: #00695c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.volunteer form button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .about-us img,
+  .mission img,
+  .donate-now img,
+  .volunteer img {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+
+  .donate-now,
+  .mission,
+  .testimonials,
+  .volunteer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission p {
+    width: 100%;
+  }
+
+  .volunteer form {
+    padding: 25px;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 2rem;
+  }
+
+  .donate-now button {
+    padding: 10px 25px;
+  }
+
+  .volunteer button {
+    padding: 12px 25px;
+  }
+}
