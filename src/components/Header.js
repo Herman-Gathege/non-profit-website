@@ -7,6 +7,7 @@ function Header() {
       <div className="header-text">
         <h2>Water For All</h2>
         <p>Providing clean drinking water to communities in need.</p>
+        <button className='volunteer-bttn'>Volunteer with us</button>
       </div>
     </section>
   );

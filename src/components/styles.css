@@ -98,6 +98,28 @@ a {
   line-height: 1.8;
 }
 
+.volunteer-bttn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #011b18;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease-in-out; */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-bttn:hover {
+  background-color: #00ad91;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+
+}
+
 /* Mobile and Tablet Responsiveness */
 @media (max-width: 768px) {
   .header-container {
